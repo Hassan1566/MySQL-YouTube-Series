@@ -16,7 +16,7 @@ FROM world_layoffs.layoffs;
 CREATE TABLE world_layoffs.layoffs_staging 
 LIKE world_layoffs.layoffs;
 
-INSERT layoffs_staging 
+INSERT INTO world_layoffs.layoffs_staging 
 SELECT * FROM world_layoffs.layoffs;
 
 
@@ -322,37 +322,3 @@ DROP COLUMN row_num;
 
 SELECT * 
 FROM world_layoffs.layoffs_staging2;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
